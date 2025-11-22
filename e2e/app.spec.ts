@@ -12,6 +12,6 @@ test.describe('Angular Dashboard', () => {
   test('should have correct title', async ({ page }) => {
     await page.goto('/');
 
-    await expect(page).toHaveTitle(/angular-dashboard/i);
+    await expect(page).toHaveTitle(/AngularDashboard/);
   });
 });
