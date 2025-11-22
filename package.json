@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "e2e": "playwright test",
+    "e2e:ui": "playwright test --ui",
+    "e2e:headed": "playwright test --headed"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
@@ -30,6 +33,7 @@
     "@angular/build": "^21.0.0",
     "@angular/cli": "^21.0.0",
     "@angular/compiler-cli": "^21.0.0",
+    "@playwright/test": "^1.56.1",
     "@tailwindcss/postcss": "^4.1.12",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
